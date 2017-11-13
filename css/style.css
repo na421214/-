@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* 公共 */
+*{ padding:0; margin:0}
+body{ font:12px/1.5 "宋体"; color:#333}
+ul,li{ list-style:none}
+a{ text-decoration:none; color:#333}
+img{border:none; vertical-align:middle}
+.clearfix:after{ content:"\200b"; display:block; height:0; clear:both}
+
+/*超链接*/
+.main a:hover,.footerBar a:hover{ text-decoration:underline}
+.al li a:hover{ text-decoration:none}
+/*头部*/
+.header{ width:980px; margin:0 auto}
+.logo{ width:226px; margin:21px 0 0 21px; float:left}
+.ad{ width:292px; float:left; margin:31px 0 0 100px}
+.minBar{ width:212px; float:right}
+.minBar span{ height:31px; background-color:#b4e391; display:block; border-radius:0 0 6px 6px; text-align:center; line-height:31px}
+.minBar strong{ font-weight:normal; font-size:14px; text-align:center; margin-top:17px; display:block}
+
+/*导航条*/
+.wrapper{ width:100%; height:43px; background-color:#f72a33; margin-top:20px; min-width:980px}
+.nav{ width:980px; margin:0 auto; height:43px}
+.nav ul{ padding-left:10px;}
+.nav li{ float:left}
+.nav li a{padding:0 20px;padding:0 18px\9;line-height:43px; color:#fff; font-weight:bold; font-size:14px; display:block}
+.nav li a:hover{ background-color:#F93;}
+/*兼容firefox*/
+@-moz-document url-prefix(){.nav li a{ padding:0 18px}} 
+
+/*正文*/
+.main{ width:980px; margin:0 auto}
+.leftContent{ width:710px; float:left}
+.rightContent{ width:260px; float:right}
+
+/* banner */
+.banner{/*banner整体宽高*/width: 980px;height: 260px;margin: 10px auto;overflow:hidden;position: relative;}
+.banner li{list-style: none;float: left;}
+.banner ul{width: 9999px;position: absolute;}
+.banner .btn{position: absolute;width: 100%;bottom: 4px;padding-left:44%;/* 左边距 */}
+.banner .btn span{display: inline-block; width: 15px;height: 15px;border-radius: 50%;background: #f90;opacity: .6; margin-right:8px;cursor: pointer;}/* 小圆点样式 */
+.banner .btn .cur{background: #000;opacity: .6;}
+.banner .left{background: url(../images/left.png) no-repeat;display: block;width: 42px;height: 39px;position: absolute;top:43%;left:-45px;cursor: pointer;}
+.banner .right{background: url(../images/right.png) no-repeat;display: block;width: 42px;height: 39px;position: absolute;top:43%;right:-45px;cursor: pointer;}
+
+
+/*团购套餐*/
+.tg{ width:710px; border:1px solid #ccc; position:relative; padding-bottom:10px}
+.title{ background-color:#f6f6f6; height:37px;}
+.title h2{ padding:10px 0 0 15px; float:left}
+.title span{ float:right; padding-right:10px; line-height:37px}
+.imgBox{ width:303px; height:178px; border:1px solid #ccc; margin:15px; float:left}
+.tg dl{ margin-top:17px; width:345px; float:left}
+.tg dt{ font:14px "微软雅黑"; margin-bottom:18px}
+.tg dt a{ color:#F00}
+.tg dd{ line-height:1.8; padding-left:15px}
+.tg dd span{ padding-left:38px}
+.tg dd b{ font-weight:normal; color:#f00}
+.btn1,.btn2{position:absolute; right:21px}
+.btn1{top:98px;}
+.btn2{top:197px;}
+
+/*设计案例*/
+.al{ width:710px;border:1px solid #ccc; margin-top:10px; padding-bottom:14px}
+.al ul{ padding:20px 0 0 10px}
+.al li{ float:left; width:153px;padding:5px 10px}
+.al li span{ color:#f00; line-height:2}
+.al li strong{ display:block; color:#333; font-weight:normal}
+.al li strong em{ color:#f00; font-style:normal}
+
+/*装修咨讯*/
+.zx,.gc,.aboutus{ width:258px;border:1px solid #ccc; padding-bottom:10px}
+.zx h2,.gc h2{ background:url(../images/zxzx.jpg) no-repeat 10px center; height:37px; line-height:37px}
+.zx h2 strong,.gc h2 strong{ visibility:hidden;}
+.zx h2 a,.gc h2 a{ font-size:12px; float:right; font-weight:normal; margin-right:10px}
+.zx .picbox{ width:234px; margin:5px auto;}
+.zx ul{ padding-left:20px;}
+.zx ul li{ background:url(../images/dot_list.jpg) no-repeat left center; padding-left:15px; width:200px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; line-height:24px}
+
+/*工程现场*/
+.gc{ margin-top:10px}
+.gc h2{ background:url(../images/gcxc.jpg) no-repeat 10px center;}
+.gc ul{padding-left:15px; padding-top:10px}
+.gc ul li{ float:left; width:110px; margin-right:10px; text-align:center}
+
+/*专题页面*/
+.zt{ width:258px; margin:10px auto}
+
+/*客户心声*/
+.xs{ margin:10px 0}
+.xs strong{ color:#c71a1e; font-size:14px}
+.xs .more{ float:right; font-family:"Lucida Console", Monaco, monospace; font-size:9px}
+.xs span{ display:block; color:#fe8402; font-weight:bold; margin:5px 0}
+.xs p{width:220px; float:left;overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
+.xs em a{ font-style:normal; color:#F00}
+
+/*联系我们*/
+.aboutus{ padding-bottom:5px;padding-bottom:10px\9}
+.aboutus strong{ display:block; color:#c71a1e; font-size:14px; padding:5px 8px}
+.aboutus span{ display:block; padding-left:8px; line-height:2}
+
+/*主材辅料*/
+.zcfl,.sjs{ width:978px; border:1px solid #ccc; padding-bottom:15px; margin-top:12px; float:left}
+.zcfl .picbox{width:900px; border-top:none; margin:0 auto;}
+.zcfl .piclist{width:830px;margin-top:20px; overflow:hidden; float:left; margin-left:20px;}
+.zcfl .piclist ul{width:1800px; overflow:hidden;}
+.zcfl .piclist ul li{ float:left; width:112px; display:inline; margin-right:30px;}
+.zcfl .piclist ul li span{ font-weight:normal; display:block; text-align:center; line-height:20px}
+.zcfl .piclist ul li em{font-style: normal;color: #f00}
+.zcfl .piclist ul li img{ width:112px;height: 112px;border:1px solid #ccc;}
+.zcfl .leftbtn{width:16px; height:28px; background:url(../images/leftBtn.jpg) no-repeat; float:left; margin-top:70px; cursor:pointer;}
+.zcfl .rightbtn{width:16px; height:28px; background:url(../images/rightBtn.jpg) no-repeat; float:right;margin-top:70px; cursor:pointer;}
+
+/* 设计师 */
+.sjs{padding-bottom: 20px}
+.sjs .picbox2{width:950px; border-top:none; margin:0 auto;}
+.sjs .piclist2{width:880px;margin-top:20px; overflow:hidden; float:left; margin-left:15px;}
+.sjs .piclist2 ul{width:1800px; overflow:hidden;}
+.sjs .piclist2 ul li{ float:left; width:160px; display:inline; margin-right:20px;text-align:center;}
+.sjs .piclist2 ul li span{ font-weight:normal; display:block;  line-height:20px}
+.sjs .piclist2 ul li em{font-style: normal;color: #f00}
+.sjs .piclist2 ul li img{ width:160px;height: 160px;border:1px solid #ccc;}
+.sjs .leftbtn2{width:23px; height:25px; background:url(../images/lbtn.png) no-repeat; float:left; margin-top:90px; cursor:pointer;}
+.sjs .rightbtn2{width:23px; height:25px; background:url(../images/rbtn.png) no-repeat; float:right;margin-top:90px; cursor:pointer;}
+.sjs .btn{display: block;background: url(../images/zxBtn.jpg);height: 21px;width: 59px;margin: 3px auto}
+
+/*底部导航*/
+.footerBar{width:100%; height:43px; background-color:#747474; margin-top:10px; min-width:980px}
+.footerBar ul{ width:620px; margin:0 auto}
+.footerBar li{ float:left; line-height:43px; margin:0 5px; color:#fff}
+.footerBar li a{ color:#fff; font-weight:bold}
+
+/*版权*/
+.footer{ width:980px; margin:0 auto; padding:15px 0;}
+.footer p{ line-height:2;text-align: center;}
